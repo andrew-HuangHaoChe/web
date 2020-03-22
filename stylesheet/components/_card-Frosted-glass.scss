@@ -1,0 +1,45 @@
+$height:256px;
+$-mgt:-90px;
+$-mgb:-24px;
+.frosted-glass-today{
+    background:rgba(204,204,204,0.6);
+    box-shadow: 0px 3px 10px rgba(black, 0.3);
+    height:$height;
+    margin-top: $-mgt;
+    letter-spacing:10px;
+    cursor:pointer;
+}
+
+.frosted-glass-famous{
+    background:rgba(0,51,102,0.6);
+    box-shadow: 0px 3px 10px rgba(black, 0.3);
+    height:$height;
+    margin-top: $-mgt;
+    letter-spacing:10px;
+    transition-property: width, height;
+    transition-duration: .15s;
+}
+.frosted-glass-famous:hover{
+    background:rgba(204,204,204,0.6);
+    width: 310px;
+    height: 270px;
+    cursor: pointer;
+}
+.frosted-glass-news{
+    background:rgba(153,204,255,0.6);
+    box-shadow: 0px 3px 10px rgba(black, 0.3);
+    height:$height;
+    margin-top: $-mgt;
+    letter-spacing:10px;
+    transition-property: width, height;
+    transition-duration: .15s;
+}
+.frosted-glass-news:hover{
+    background:rgba(204,204,204,0.6);
+    cursor: pointer;
+    width: 310px;
+    height: 270px;    
+}
+
+
+
