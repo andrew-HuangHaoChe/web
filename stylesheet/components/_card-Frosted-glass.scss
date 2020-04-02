@@ -1,0 +1,58 @@
+$height:256px;
+$-mgt:-90px;
+$-mgb:-24px;
+.today{
+    position: relative;
+    z-index: 4;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+.card-f{
+        &::after{
+            background-image: url(https://images.unsplash.com/photo-1570378164207-c63f4e4f0563?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1355&q=80);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+}
+.card-center-bg{
+        &::after{
+            background-image: url(https://images.unsplash.com/photo-1555532538-dcdbd01d373d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1431&q=80);
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+}
+.card-right-bg{
+    &::after{
+        background-image: url(https://images.unsplash.com/photo-1573332670167-63e10082b893?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+.card-all{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 3;
+    overflow: hidden;
+    &::after{
+        content: "";
+        position: absolute;
+        left: -20px;
+        top: -20px;
+        bottom: -20px;
+        right: -20px;
+        filter: blur(3px);
+    }
+    &:hover::after{
+        filter: blur(0px);
+        transition: all .3s;
+    }
+}
+
+

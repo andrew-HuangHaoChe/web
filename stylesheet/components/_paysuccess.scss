@@ -1,0 +1,48 @@
+.banner{
+    height: 460px;
+}
+
+.progressbar li{
+    list-style-type: none;
+    float:left;
+    width: 33.33%;
+    text-align: center;
+    
+    &::before{
+        color: $fontColor;
+        font-family: "Font Awesome 5 Free";
+        content:"\f058";
+        width: 26px;
+        height: 26px;
+        line-height: 24px;
+        border: 1px solid #ddd;
+        display: block;
+        text-align: center;
+        margin:0 auto 10px auto;
+        border-radius: 50%;
+        background-color: white;
+        z-index: 3;
+    }
+    &::after{
+        display: block;
+        content:'';
+        position: absolute;
+        width: 51%;
+        height: 1px;
+        background-color: #003366;
+        top: 14%;
+        right: 21%;
+        z-index: -1;
+        overflow: hidden;
+    }
+    &:first-child::after{
+        content: none;
+    }
+}
+
+.progressbar li:before{
+    border-color: #003366;
+}
+
+
+
